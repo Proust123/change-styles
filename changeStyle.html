@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Style</title>
+
+    <style>
+
+        *{
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            height : 100vh;
+            width : 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: darkgoldenrod;
+            overflow: hidden;
+        }
+        .heading{
+            height : max-content;
+            font-size: 50px;
+            color : white;
+            word-spacing: 5px;
+        }
+        .image{
+            height : 400px;
+            width : 800px;
+            background-color: black;
+            overflow: hidden;
+            padding: 10px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <section>
+        <h1 class = "heading">
+            Update CSS Variables with <span style="color: black">JS</span>
+        </h1>
+        <div class="inputs">
+            Spacing : <input type="range" name="" id="ranges" min = "0" max = "100" value = '10'>
+            Blur : <input type="range" name="" id="ranges" min = "0" max = "50" value = 0>
+            Rotate : <input type="range" name="" id="ranges" min = "0" max = "360" value = 0>
+            Scale : <input type="range" name="" id="ranges" min = "1" max = "10" value = 0>
+            Base Color : <input type="color" name="" id="color">
+        </div>
+        <div class = "image">
+            <img src="./photo-1465188162913-8fb5709d6d57.jfif" alt="" height = 100% width = 100%/>
+        </div>
+    </section>
+
+
+    <script src="./changeStyle.js"></script>
+
+</body>
+</html>
